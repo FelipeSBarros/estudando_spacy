@@ -22,10 +22,24 @@ Além de ter o modelo criado, é necessário pode avaliar a "performance" do mod
 
 O [`spaCy`](https://spacy.io/) possui um comando para processar e executar o fluxo de trabalho de treinamento de uma modelo: [`spacy train`](https://spacy.io/api/cli#train). O mesmo depende de um [`config.cfg`](https://spacy.io/usage/training#config) com toda as informações de configurações/hiperparâmetros, e [os dados de treinamento num formato binário](https://spacy.io/api/data-formats#training).
 
-Contudo, antes de começar a treinar o modelo é necessário definir tais configurações e para facilitar, existe o [quick start](https://spacy.io/usage/training#quickstart), e também o [init config](https://spacy.io/api/cli#init-config).
+Contudo, antes de começar a treinar o modelo é necessário definir tais configurações.
+
+### Configurações
+
+Para facilitar a definição de tais arquivos de configurações, existe o [quick start](https://spacy.io/usage/training#quickstart), e também o [init config](https://spacy.io/api/cli#init-config).
 
 `init config`
 > Initialize and save a config.cfg file using the recommended settings for your use case. It works just like the quickstart widget, only that it also auto-fills all default values and exports a training-ready config.
 
-`quick start`
+:1st_place_medal: `quick start`
 > This quickstart widget helps you generate a starter config with the recommended settings for your specific use case. It’s also available in spaCy as the init config command.
+
+O `quick start` demanda que as configurações [pré-definidas](https://spacy.io/usage/training#quickstart) sejam salvar num arquivo [`base_config.cfg`](./base_config.cfg) para então serem usadas no `init config`, com o parâmetro `fill-config`. ao usar o *quick start*, garantiomos que as configurações de treinamento estejam completas e sem *hidden defaults*, garantindo a reproducibilidade do experimento.
+
+```python
+python -m spacy init fill-config base_config.cfg config.cfg
+```
+>✔ Auto-filled config with all values  
+✔ Saved config config.cfg  
+You can now add your data and train your pipeline:  
+`python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy`
