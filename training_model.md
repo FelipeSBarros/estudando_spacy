@@ -41,5 +41,20 @@ python -m spacy init fill-config base_config.cfg config.cfg
 ```
 >✔ Auto-filled config with all values  
 ✔ Saved config config.cfg  
-You can now add your data and train your pipeline:  
+You can now add your data and train your pipeline:
 `python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy`
+
+A configuração das `paths` podem estar definidas no `config.cfg`.  
+
+> Some of the main advantages and features of spaCy’s training config are:
+> * **Structured sections.** The config is grouped into sections, and nested sections are defined using the . notation. For example, [components.ner] defines the settings for the pipeline’s named entity recognizer. The config can be loaded as a Python dict.
+> * **References to registered functions.** Sections can refer to registered functions like model architectures, optimizers or schedules and define arguments that are passed into them. You can also register your own functions to define custom architectures or methods, reference them in your config and tweak their parameters.
+> * **Interpolation.** If you have hyperparameters or other settings used by multiple components, define them once and reference them as variables.
+> * **Reproducibility with no hidden defaults.** The config file is the “single source of truth” and includes all settings.
+> * **Automated checks and validation.** When you load a config, spaCy checks if the settings are complete and if all values have the correct types. This lets you catch potential mistakes early. In your custom architectures, you can use Python type hints to tell the config which types of data to expect.
+
+> Under the hood, the config is parsed into a dictionary. It’s divided into sections and subsections, indicated by the square brackets and dot notation. For example, [training] is a section and [training.batch_size] a subsection. Subsections can define values, just like a dictionary, or use the @ syntax to refer to registered functions. This allows the config to not just define static settings, but also construct objects like architectures, schedules, optimizers or any other custom components.
+
+### [Dados de treinamento](https://spacy.io/usage/training#training-data)
+
+O spaCy já disponibiliza um comando ([`spacy convert`](https://spacy.io/api/cli#convert)) para converter os dados de treinamento ao formato binário (`.spacy`) requerido pelo sistema. O conversor pode ser definido na linha de comando ou [escolhido dentre as opções predefinidas](https://spacy.io/api/cli#converters) a partir da extensão do arquivo de entrada.
