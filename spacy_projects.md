@@ -37,7 +37,9 @@ Comandos podem ter dependencias e *outputs* declarados usando chaves `deps` e `o
 
 4. Executa o fluxo de trabalho
 
-Fluxo de trabalho são definidos por um conjunto de comandos executados em orem, onde um depende do outro. Por exemplo, para gerar um pacote de *pipeline*, é necessário inciar convertendo os dados para, então, executar o `spacy train`, caso a conversão seja realizada com sucesso, executa o `spacy package` para transformar o melhor mmodelo treinado em um Python package instalável. Esse fluxo de trabalho é definido no `project.yml`, no exemplo a seguir, se está executando um fluxo de trabalho definido como `all`:
+Fluxo de trabalho são definidos por um conjunto de comandos (ver ite anterior) executados em orem, onde um depende do outro. Por exemplo, para gerar um pacote de *pipeline*, é necessário inciar convertendo os dados para, então, executar o `spacy train`, caso a conversão seja realizada com sucesso, executa o `spacy package` para transformar o melhor modelo treinado em um Python package instalável. Esse fluxo de trabalho é definido no `project.yml`. 
+
+No exemplo a seguir, se está executando um fluxo de trabalho definido como `all`:
 
 `python -m spacy project run all`
 
