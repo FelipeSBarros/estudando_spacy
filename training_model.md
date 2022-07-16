@@ -6,7 +6,7 @@ Essa predição é baseada nos pesos atribuidos no modelo. Por sua vez, tais pes
 
 > Training is an iterative process in which the model’s predictions are compared against the reference annotations in order to estimate the gradient of the loss.
 
-O gradiente de perda é usado para calcular o gradiente de pesos a partir de ["Baclpropagation"](https://thinc.ai/docs/backprop101). Este último gradiente indica como o peso deve mudar para que as prições sejam mais próximas (similares) às etiquetas de referência através do tempo.
+O gradiente de perda é usado para calcular o gradiente de pesos a partir de ["Backpropagation"](https://thinc.ai/docs/backprop101). Este último gradiente indica como o peso deve mudar para que as prições sejam mais próximas (similares) às etiquetas de referência através do tempo.
 
 ![img_1.png](img/img_1.png)
 
@@ -28,10 +28,14 @@ Contudo, antes de começar a treinar o modelo é necessário definir tais config
 
 Para facilitar a definição de tais arquivos de configurações, existe o [quick start](https://spacy.io/usage/training#quickstart), e também o [init config](https://spacy.io/api/cli#init-config).
 
-`init config`
+O init config prepara uma configuração de base a partir dos parâmetros passados na função. Ao passo que no *quick start*, a configuração base é feita na [página com o widget](https://spacy.io/usage/training#quickstart). 
+
+`python -m spacy init config output_file --lang --pipeline --optimize --gpu --pretraining --force`  
+
 > Initialize and save a config.cfg file using the recommended settings for your use case. It works just like the quickstart widget, only that it also auto-fills all default values and exports a training-ready config.
 
 :1st_place_medal: `quick start`
+
 > This quickstart widget helps you generate a starter config with the recommended settings for your specific use case. It’s also available in spaCy as the init config command.
 
 O `quick start` demanda que as configurações [pré-definidas](https://spacy.io/usage/training#quickstart) sejam salvar num arquivo [`base_config.cfg`](./base_config.cfg) para então serem usadas no `init config`, com o parâmetro `fill-config`. ao usar o *quick start*, garantiomos que as configurações de treinamento estejam completas e sem *hidden defaults*, garantindo a reproducibilidade do experimento.

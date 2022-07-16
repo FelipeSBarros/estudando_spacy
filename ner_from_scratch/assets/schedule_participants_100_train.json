@@ -1,0 +1,250 @@
+[
+  [
+    "SUE/Anatel",
+    {
+      "entities": [
+        [
+          0,
+          10,
+          "SUE/Anatel",
+          "MISC"
+        ]
+      ]
+    }
+  ],
+  [
+    "GQRIS/ANVISA",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "GQRIS/ANVISA",
+          "MISC"
+        ]
+      ]
+    }
+  ],
+  [
+    "STRENGER Gustavo;, Sami Benakouche;, GARROTI Leandro;, Gustavo Santana Borges;, Eduardo Kruel Milano do Canto;, Marcelo Barroso Barbosa Leite;, Adeilson Evangelista Nascimento;",
+    {
+      "entities": [
+        [
+          0,
+          16,
+          "STRENGER Gustavo",
+          "MISC"
+        ],
+        [
+          19,
+          23,
+          "Sami",
+          "PER"
+        ],
+        [
+          45,
+          52,
+          "Leandro",
+          "LOC"
+        ],
+        [
+          55,
+          70,
+          "Gustavo Santana",
+          "PER"
+        ],
+        [
+          80,
+          109,
+          "Eduardo Kruel Milano do Canto",
+          "PER"
+        ],
+        [
+          112,
+          141,
+          "Marcelo Barroso Barbosa Leite",
+          "PER"
+        ],
+        [
+          144,
+          176,
+          "Adeilson Evangelista Nascimento;",
+          "PER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Andr\u00e9 de Souza Monteiro, Secret\u00e1rio de Moderniza\u00e7\u00e3o Institucional e Regional (SEMIR/SEME/SG-PR)",
+    {
+      "entities": [
+        [
+          0,
+          23,
+          "Andr\u00e9 de Souza Monteiro",
+          "PER"
+        ],
+        [
+          25,
+          76,
+          "Secret\u00e1rio de Moderniza\u00e7\u00e3o Institucional e Regional",
+          "PER"
+        ]
+      ]
+    }
+  ],
+  [
+    "SPE",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Sergio Yoshimasa Okane - Secret\u00e1rio da Secretaria de Aten\u00e7\u00e3o Especializada \u00e0 Sa\u00fade - SAES, Adriana Lustosa Eloi - Diretora do Departamento de Certifica\u00e7\u00e3o de Entidades Beneficentes de Assist\u00eancia Social em Sa\u00fade - DCEBAS/SAES, Secretaria de Aten\u00e7\u00e3o Especializada \u00e0 Sa\u00fade - SAES",
+    {
+      "entities": [
+        [
+          0,
+          22,
+          "Sergio Yoshimasa Okane",
+          "PER"
+        ],
+        [
+          25,
+          82,
+          "Secret\u00e1rio da Secretaria de Aten\u00e7\u00e3o Especializada \u00e0 Sa\u00fade",
+          "PER"
+        ],
+        [
+          91,
+          113,
+          "Adriana Lustosa Eloi -",
+          "PER"
+        ],
+        [
+          126,
+          211,
+          "Departamento de Certifica\u00e7\u00e3o de Entidades Beneficentes de Assist\u00eancia Social em Sa\u00fade",
+          "ORG"
+        ],
+        [
+          227,
+          270,
+          "Secretaria de Aten\u00e7\u00e3o Especializada \u00e0 Sa\u00fade",
+          "ORG"
+        ]
+      ]
+    }
+  ],
+  [
+    "Andre Luiz da Costa Azevedo -  COAGE/DILOG/SA/SG/PR, Erlandio Leite Paulino - COAGE/DILOG/SA/SG/PR",
+    {
+      "entities": [
+        [
+          0,
+          27,
+          "Andre Luiz da Costa Azevedo",
+          "PER"
+        ],
+        [
+          43,
+          51,
+          "SA/SG/PR",
+          "ORG"
+        ],
+        [
+          53,
+          75,
+          "Erlandio Leite Paulino",
+          "PER"
+        ],
+        [
+          78,
+          98,
+          "COAGE/DILOG/SA/SG/PR",
+          "MISC"
+        ]
+      ]
+    }
+  ],
+  [
+    "Participantes:, - Chefe da Casa Militar da Presid\u00eancia da Rep\u00fablica de Mo\u00e7ambique, Contra-Almirante  Joaquim Rivas Mangrasse., - Secret\u00e1rio de Seguran\u00e7a e Coordena\u00e7\u00e3o Presidencial, Luiz Fernando Estorilho Baganha., - Chefe de Gabinete do Ministro Chefe do Gabinete de Seguran\u00e7a Institucional da Presid\u00eancia da Rep\u00fablica, Ricardo Ibsen Pennaforte de Campos.",
+    {
+      "entities": [
+        [
+          27,
+          81,
+          "Casa Militar da Presid\u00eancia da Rep\u00fablica de Mo\u00e7ambique",
+          "LOC"
+        ],
+        [
+          83,
+          114,
+          "Contra-Almirante  Joaquim Rivas",
+          "PER"
+        ],
+        [
+          129,
+          179,
+          "Secret\u00e1rio de Seguran\u00e7a e Coordena\u00e7\u00e3o Presidencial",
+          "PER"
+        ],
+        [
+          181,
+          212,
+          "Luiz Fernando Estorilho Baganha",
+          "PER"
+        ],
+        [
+          226,
+          255,
+          "Gabinete do Ministro Chefe do",
+          "LOC"
+        ],
+        [
+          321,
+          345,
+          "Ricardo Ibsen Pennaforte",
+          "PER"
+        ],
+        [
+          349,
+          355,
+          "Campos",
+          "LOC"
+        ]
+      ]
+    }
+  ],
+  [
+    "https://www.sbfte.org.br/congresso/scientific-program-2/",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Luiz Augusto da Cruz, Rosaura Maria da Costa Hexsel, Patriciar Regina, CGTAI",
+    {
+      "entities": [
+        [
+          0,
+          20,
+          "Luiz Augusto da Cruz",
+          "PER"
+        ],
+        [
+          22,
+          44,
+          "Rosaura Maria da Costa",
+          "PER"
+        ],
+        [
+          53,
+          69,
+          "Patriciar Regina",
+          "LOC"
+        ]
+      ]
+    }
+  ]
+]
