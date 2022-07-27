@@ -1,6 +1,6 @@
-# 
+# Melhorando um modelo de `Named Entity Recognition` (NER) com spaCy
 
-Para melhorar o modelo `pt_core_news_lg`, utilizou-se o `quick start` para gerar o [`base_config`](base_config.cfg).
+Para melhorar o modelo `pt_core_news_lg`, utilizou-se o `quick start` para gerar o [`base_config`](../base_config.cfg).
 
 ```
 mkdir ner_from_scratch && cd ner_from_scratch

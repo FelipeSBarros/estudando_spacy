@@ -8,7 +8,7 @@ Essa predição é baseada nos pesos atribuidos no modelo. Por sua vez, tais pes
 
 O gradiente de perda é usado para calcular o gradiente de pesos a partir de ["Backpropagation"](https://thinc.ai/docs/backprop101). Este último gradiente indica como o peso deve mudar para que as prições sejam mais próximas (similares) às etiquetas de referência através do tempo.
 
-![img_1.png](img/img_1.png)
+![img_1.png](../img/img_1.png)
 
 > When training a model, we don’t just want it to memorize our examples – we want it to come up with a theory that can be generalized across unseen data. 
 
@@ -38,7 +38,7 @@ O init config prepara uma configuração de base a partir dos parâmetros passad
 
 > This quickstart widget helps you generate a starter config with the recommended settings for your specific use case. It’s also available in spaCy as the init config command.
 
-O `quick start` demanda que as configurações [pré-definidas](https://spacy.io/usage/training#quickstart) sejam salvar num arquivo [`base_config.cfg`](./base_config.cfg) para então serem usadas no `init config`, com o parâmetro `fill-config`. ao usar o *quick start*, garantiomos que as configurações de treinamento estejam completas e sem *hidden defaults*, garantindo a reproducibilidade do experimento.
+O `quick start` demanda que as configurações [pré-definidas](https://spacy.io/usage/training#quickstart) sejam salvar num arquivo [`base_config.cfg`](../base_config.cfg) para então serem usadas no `init config`, com o parâmetro `fill-config`. ao usar o *quick start*, garantiomos que as configurações de treinamento estejam completas e sem *hidden defaults*, garantindo a reproducibilidade do experimento.
 
 ```python
 python -m spacy init fill-config base_config.cfg config.cfg
@@ -69,7 +69,7 @@ O processo de conversão dos dados de treinamento está centrado na criação de
 
 ## [Customização de pipeline e treinamento](https://spacy.io/usage/training#config-custom)
 
-Tipicamente estamos treinando um *pipeline* de um ou mais componentes. O bloco ["[components]"](./config.cfg#21), no `config.cfg`, define os componentes disponíveis e como devem ser criados: a partir de um [`factory`](https://spacy.io/usage/processing-pipelines#built-in) ou a aprtir de uma [fonte já existente](https://spacy.io/usage/processing-pipelines#sourced-components).
+Tipicamente estamos treinando um *pipeline* de um ou mais componentes. O bloco ["[components]"](../config.cfg#21), no `config.cfg`, define os componentes disponíveis e como devem ser criados: a partir de um [`factory`](https://spacy.io/usage/processing-pipelines#built-in) ou a aprtir de uma [fonte já existente](https://spacy.io/usage/processing-pipelines#sourced-components).
 
 Por exemplo: "[components.parser]" está definindo um componente "parser" na pipeline.
 
@@ -149,4 +149,4 @@ Ao iniciar o treinamento de um modelo novo, spaCy inicializará  *pipeline* e ca
 2. Chama a inicialização de tokenização e *pipeline* component com *callback* para acessar os dados de treinamento, o objeto `nlp` e qualquer outro argumento definido no bloco "[initialize]".
 3. No *pipeline components*: se necessário, usa os dados para inferir formatos faltantes and configura esquema de *label* caso não fornecido. Components podem, ainda, carregar outros dados como tableas e dicionários.
 
-![inicialização](img/img_2.png)
+![inicialização](../img/img_2.png)

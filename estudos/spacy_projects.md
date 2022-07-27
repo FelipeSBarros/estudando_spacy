@@ -2,7 +2,7 @@
 
 *spaCy projects* permite gestionar e compartilhar fluxos de trabalho "end-to-end" para diferentes casos e domínios, organizar treinamento, empacotamento e servindo *pipelines* customizados. Para começar, basta clonar um modelo de projeto prédefinido, o ajustando às necessidaders, carregando dados específicos, treinando *pipeline*, exportando-o como um módulo python, subindo os resultados a um servidor de armazenamento remoto e compartilhando com a equipe. 
 
-![spaCy projects](img/img_3.png)
+![spaCy projects](../img/img_3.png)
 
 1. Clone project template
 O comando `spacy project clone` clona um modeo de projeto prexistente e copia os arquivos para um diretório local. Tendo isso, pode-se executar o projeto (por exemplo, treinar um *pipeline*).
